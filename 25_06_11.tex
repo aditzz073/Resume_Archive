@@ -1,0 +1,248 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{2.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-16.5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Dhruv Puri} \\ \vspace{8pt}
+    \small 
+    \faIcon{map-marker-alt}
+    \href{https://www.google.com/maps/place/bengaluru/data=!4m2!3m1!…}
+    {\underline{dhruvpuri.xyz}}
+    \faIcon{phone}
+    \href{tel:+919149407326}
+    {\underline{+91 9149407326}}
+    \faIcon{github}
+    \href{https://github.com/slashexx}{\underline{github.com/slashexx}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/dhruvpuri-slashex}{\underline{in/dhruvpuri-slashex}} $  $
+    \faIcon{envelope}
+    \href{mailto:dhruvpuri.35@gmail.com}
+    {\underline{dhruvpuri.35@gmail.com}}
+    
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Dayananda Sagar College of Engineering}{Sept. 2027}
+      {B.E. Information Science}{CGPA: 9.58}
+  \resumeSubHeadingListEnd
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages}{: Java, Go, Typescript, Python} \\
+     \textbf{Frameworks and Libraries}{: Node.js, Express, Next.js} \\
+     
+     \textbf{Tools}{: Linux, Git, GitHub Actions, Firebase, Docker, Kubernetes, GitOps}     
+     
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+ 
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://wecofy.com/}{\underline{WeCofy}}}{December 2024 – Present}
+{Full-Stack Developer: Next.js, Node.js, Express, MongoDB}{Intern · Remote}
+\resumeItemListStart
+  \resumeItem{Worked on \textbf{Juristo}, an \textbf{AI-powered legal platform}, building features to improve accessibility and scalability.}
+  \resumeItem{Developed a robust \textbf{developer API service} with subscription-tier logic and a \textbf{rate-limiting} based on subscription levels, supporting seamless third-party integrations.}
+  \resumeItem{Integrated \textbf{ZeptoMail} for transactional emails and \textbf{Firebase Cloud Messaging (FCM)} for real-time notifications, improving communication workflows.}
+  % \resumeItem{Implemented dynamic \textbf{rate-limiting} based on subscription levels, ensuring system \textbf{efficiency} and \textbf{fair usage}.}
+\resumeItemListEnd
+  
+  \resumeItemListEnd
+
+
+
+
+\vspace{-13pt}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+\resumeProjectHeading
+{\textbf{Lumine} $|$ \footnotesize\emph{Go, TypeScript, AWS, GitHub Actions, Terraform, Prometheus}}{\faIcon{github}\href{https://github.com/Nexusrex18/lumine}{ \underline{Lumine}}}
+
+\resumeItemListStart
+    \resumeItem{Developed an \textbf{interactive CLI tool} to automate DevOps workflows, allowing startups and developers to set up basic \textbf{CI/CD, infrastructure, and monitoring}.}
+    \resumeItem{Integrated \textbf{AWS services (ECR, ECS, S3, EKS)} using \textbf{Terraform}, enabling automated infrastructure provisioning and deployment to Dockerhub.}
+    \resumeItem{Set up a basic \textbf{monitoring} template generation using \textbf{Prometheus}, providing real-time infrastructure tracking and alerting.}
+    \resumeItem{Implemented \textbf{CI/CD pipeline automation} with \textbf{GitHub Actions} and \textbf{Jenkins}, streamlining build, test, and deployment workflows.\href{https://lumineops.vercel.app}{[\underline{Link}]}}
+    % \resumeItem{Designed a \textbf{cost estimation} feature leveraging AWS pricing APIs to help users predict infrastructure expenses.}
+    % \resumeItem{Built an \textbf{interactive CLI} that generates Terraform configurations and GitHub Actions workflows based on user input.}
+\resumeItemListEnd
+
+
+\vspace{-4pt}
+
+\resumeProjectHeading
+{\textbf{CodeBrewery} $|$ \footnotesize\emph{Golang, Docker, Kubernetes, GitHub Actions, TypeScript}}{\faIcon{github}\href{https://github.com/slashexx/CodeBrewery}{ \underline{CodeBrewery}}}
+
+\resumeItemListStart
+    \resumeItem{Developed a cutting-edge online IDE allowing users to \textbf{write, compile, and run} code across multiple languages, leveraging a \textbf{microservices architecture} with \textbf{Go} for the backend.}
+    \resumeItem{Employed \textbf{Docker} for \textbf{containerization} and \textbf{Kubernetes} for orchestration, ensuring seamless deployment and scalability.}
+    \resumeItem{Set up \textbf{CI/CD} pipelines with \textbf{GitHub Actions} and \textbf{YAML} to automate testing and deployment, improving development efficiency.\href{https://codebrewery.vercel.app}{[\underline{Link}]}}
+    % \resumeItem{Implemented thorough testing for backend services in \textbf{Go} and frontend components in \textbf{Jest} to maintain code quality.}
+    % \resumeItem{Configured \textbf{Docker Compose} for local development, streamlining project setup.}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{KisanSetu} $|$ \footnotesize\emph{Node.js, Express, WebSocket, Solidity, Docker, Firebase}}{\faIcon{github}\href{https://github.com/slashexx/kisansetu}{\underline{Kisansetu}}}
+
+% \resumeItemListStart
+%     \resumeItem{Developed a blockchain platform for secure contract farming agreements between farmers and buyers.}
+%     \resumeItem{Integrated \textbf{smart contracts} in \textbf{Solidity} for transparent and reliable transactions.}
+%     \resumeItem{Implemented features like \textbf{real-time price negotiation}, \textbf{direct communication}, and \textbf{automated payments}.}
+%     \resumeItem{Deployed the application with \textbf{Docker} and used \textbf{Firebase} for authentication and data management. \href{kisansetu.onrender.com}{\textcolor{blue}{[Link]}}}
+% \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-14.5pt}
+
+ % ------------------Open source----------
+\section{Open Source Contributions}  
+\resumeSubHeadingListStart  
+
+\resumeProjectHeading  
+{\textbf{Prometheus Operator (CNCF)} $|$ \footnotesize\emph{Golang, GitHub Actions, CI/CD, actionlint}}{Nov. 2024}  
+\resumeItemListStart  
+\resumeItem{Added support for \textbf{RocketChat} as a notification reciever in AlertManagerConfig CRD. \href{https://github.com/prometheus-operator/prometheus-operator/pull/7328}{{[\underline{PR}]}}} 
+\resumeItem{Refactored the \textbf{OVHCloudSDConfig} validation logic as part of ScrapeConfig API refactor, ensuring compliance with Prometheus version requirements and improving test coverage for unsupported field handling. \href{https://github.com/prometheus-operator/prometheus-operator/pull/7238}{{[\underline{PR}]}}}  
+\resumeItem{Enhanced CI/CD reliability by implementing a \textbf{GitHub Actions workflow linter} using \textbf{actionlint}, ensuring accurate and consistent YAML configurations.\href{https://github.com/prometheus-operator/prometheus-operator/pull/7123}{{[\underline{PR}]}}}  
+\resumeItemListEnd  
+
+\resumeProjectHeading  
+{\textbf{KCL Programming Language (CNCF)} $|$ \footnotesize\emph{Rust, Crypto}}{Oct. 2024}  
+\resumeItemListStart  
+\resumeItem{Added support for \textbf{filesha512} and \textbf{fileblake3} hashing functions by contributing to the crypto module of the KCL programming language, significantly enhancing its \textbf{cryptographic capabilities}.}  
+\resumeItem{Implemented efficient file hashing operations with robust error handling, improving reliability and performance across diverse file types. \href{https://github.com/kcl-lang/kcl/pull/1697}{{[\underline{PR}]}}}  
+\resumeItemListEnd  
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-11pt}  
+
+% -------------------- EXTRA-CURRICULAR --------------------
+\section{Extracurricular} \vspace{0.5pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0.08em, topsep=1pt]
+    \item \textbf{Winner, Grand prize:} Placed 1st among 1965 participants at NITK Hackverse 5.0 hackathon.
+    % \item \textbf{Winner:} at Clone Wars.
+    \item \textbf{2nd Runner Up:} Placed 3rd amongst 1200 participants at Sandbox, the cybersecurity hackathon.
+    \item \textbf{2nd Runner Up:} HackSprint, part of Ignite 2.0
+    % \item \textbf{2nd Runner Up:} Capture the Flag Competition hosted by Point Blank 
+    \item \textbf{2* at Codechef:} Rating: 1414
+\end{itemize}
+
+\end{document}
