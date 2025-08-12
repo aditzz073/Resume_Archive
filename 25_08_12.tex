@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{2.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \color{gray}
+  \item
+\end{flushright}
+
+\vspace{-16.5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Aditya} \\ \vspace{8pt}
+    \small 
+                      
+    \href{https://www.adityapujer.xyz}
+    {\underline{adityapujer.xyz}}
+    $ | $
+    \href{tel:+917204328987}
+    {\underline{+91 7204318987}}
+    $ | $
+    \href{https://github.com/aditzz073}{\underline{github.com/aditzz073}} $  $
+    $ | $
+    \href{https://linkedin.com/in/aditya-pujer}{\underline{in/aditya-pujer}} $  $
+    $ | $
+    \href{mailto:pujeradi@gmail.com}
+    {\underline{pujeradi@gmail.com}}
+    
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Dayananda Sagar College of Engineering}{Sept. 2027}
+      {B.E. Information Science}{CGPA: 9.15}
+  \resumeSubHeadingListEnd
+
+  % -------------------- PROFESSIONAL SUMMARY --------------------
+\section{Professional Summary}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\normalfont Proactive undergraduate with startup founder experience. Skilled in research, operations, client relations, and\\
+      basic programming (JavaScript/Python). Available for full-time, in-person work in HSR Layout supporting\\
+      founders with scheduling, research, presentations, and light technical tasks.\\}{}{}{}
+
+\resumeSubHeadingListEnd
+\vspace{-1.6em}
+
+ 
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\href{https://freesipindia.xyz/}{\underline{FreeSip India}}}{January 2025 – May 2025}
+{Founder \& CTO}{Onsite}
+\resumeItemListStart
+  \resumeItem{Co-founded and led both technical and operational execution for FreeSip, a B2B marketing startup distributing branded bottled water at large public events.}
+  \resumeItem{Managed client relationships, coordinated meetings, and oversaw deliverables, achieving successful execution of FreeSip’s first large-scale project with strong brand impact and profitability.}
+  \resumeItem{Conducted market and competitor research to identify high-potential branding channels and event distribution strategies.}
+  \resumeItem{Created and presented persuasive pitch decks that secured three clients and two sponsorship opportunities through proactive outreach at Bengaluru tech and business networking events.}
+  \resumeItem{Handled cross-functional responsibilities including product development, vendor coordination, logistics, and branding, ensuring seamless execution under tight timelines.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-10pt}
+
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages \& Frameworks}{: JavaScript, TypeScript, Python, Next.js} \\
+        \textbf{Tools \& Platforms}{: Notion, Trello, Slack, Asana, Git, GitHub} \\
+        \textbf{Core Strengths}{: Research \& Analysis, Team Coordination, Client Relations, Pitch Deck Development, Event Logistics, Problem-Solving, Startup Operations} 
+    }}
+\end{itemize}
+\vspace{-15pt}
+
+
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{EmberEye: AI-Powered Wildfire Risk Prediction} }
+{\faIcon{github}\href{https://github.com/aditzz073/ember-eye}{ \underline{Repo}}  \faIcon{link}\href{https://embereye-three.vercel.app/}{ \underline{Demo}}}
+\resumeItemListStart
+    \resumeItem{Built and deployed an AI-powered dashboard that predicts wildfire risks using environmental and weather data, enabling proactive decision-making.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Trash View On Maps} }
+{\faIcon{github}\href{https://github.com/aditzz073/Trash-view-on-maps}{ \underline{Repo}}  \faIcon{link}\href{https://trash-view-on-maps.vercel.app/}{ \underline{Demo}}}
+\resumeItemListStart
+    \resumeItem{Developed a gamified web platform to crowdsource urban waste identification through street view imagery, managing the project from concept to launch.}
+\resumeItemListEnd
+\vspace{-4.5pt}
+
+
+%----------------- LEADERSHIP & OPERATIONS HIGHLIGHTS -----------------
+\section{Leadership \& Operations Highlights}
+\resumeItemListStart
+    \resumeItem{\textbf{Event Logistics} — Media Lead at Mudita NGO, managing a 25-member team for event promotions and social media campaigns with measurable engagement growth.}
+    \resumeItem{\textbf{Hackathon Team Lead} — Led 2 hackathon teams to “Most Innovative Project” awards, coordinating deadlines, team workflows, and presentations.}
+    \resumeItem{\textbf{Project Management Tools} — Proficient in Notion, Trello, Slack, and Asana for task tracking, coordination, and reporting.}
+    \resumeItem{\textbf{Research \& Analysis} — Conducted market, competitor, and tech research for projects like KisanSetu, ReconGraph, and wildfire prediction models.}
+\resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-9.5pt}
+
+
+% -------------------- SELECTED ACHIEVEMENTS --------------------
+\section{Achievements}
+\resumeItemListStart
+  \resumeItem{Secured \textbf{3 paying clients} and \textbf{2 sponsorship leads} for FreeSip through \textbf{cold pitching} at networking events.}
+  \resumeItem{Won \textbf{“Most Innovative Project”} in 2 hackathons for \textbf{problem-solving} and \textbf{creative execution}.}
+  \resumeItem{Coordinated \textbf{multi-channel event campaigns} for Mudita NGO, achieving measurable \textbf{reach and engagement growth}.}
+\resumeItemListEnd
+\vspace{-0.2em}
+
+
+\end{document}
